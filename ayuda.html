@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pesca</title>
+    <link rel="stylesheet" href="stylesapartados/sayuda.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web sobre Pesca</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia de la pesca</a></li>
+                <li><a href="tpesca.html">Tipos de pesca</a></li>
+                <li><a href="tpeces.html">Tipos de peces</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Formulario de Inscripción para mi empresa</h2>
+            <form action="submit_form.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+
+                <label for="experiencia">Años de Experiencia en Pesca:</label>
+                <input type="number" id="experiencia" name="experiencia" required>
+
+                <label for="tipo-pesca">Tipo de Pesca Favorita:</label>
+                <select id="tipo-pesca" name="tipo-pesca" required>
+                    <option value="agua-dulce">Agua Dulce</option>
+                    <option value="agua-salada">Agua Salada</option>
+                    <option value="fly-fishing">Fly Fishing</option>
+                </select>
+
+                <label for="equipo">Equipo de Pesca Favorito:</label>
+                <input type="text" id="equipo" name="equipo" required>
+
+                <label for="comentarios">En qué destacas:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+                <p class="disclaimer">
+                    Al enviar este formulario, aceptas que tus datos serán almacenados en nuestra base de datos conforme a nuestra <a href="politica-privacidad.html">Política de Privacidad</a>.
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
